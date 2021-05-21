@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container,
+.container__nav,
+.nav__text__centre,
+.right__centre__top,
+.top__right__icons,
+.centre__option__bar,
+.middle__left__text,
+.centre__middle,
+.middle__right__top,
+.right__bottom__Jobs,
+.container__aside__top {
+    display: flex;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.container,
+.nav__text__centre,
+.container__right__centre,
+.top__right__icons,
+.centre__middle {
+    width: 100%;
+}
+
+.container {
+    min-height: 100vh;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.container .container__aside {
+    width: 250px;
+    min-height: 100vh;
+    background-color: #2a58ac;
+}
+
+.container__aside__top,
+.container__aside > ul > li > .icon,
+.container__aside > ul > li > p,
+.right__centre__top,
+.top__right__icons,
+.middle__right__top {
+    align-items: center;
+}
+
+.container__aside__top {
+    padding: 15px 20px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.container__aside__top > img,
+.centre__top__icon {
+    border-radius: 100%;
+}
+
+.container__aside__top > img,
+.middle__right__top > img,
+.right__bottom__Jobs > img {
+    object-fit: cover;
+}
+
+.container__aside__top > img {
+    margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.container__aside__top > button {
+    margin-top: 10px;
+}
+
+.container__aside__top > p:nth-child(2),
+.container__aside__top > button:hover,
+.container__aside__top > button,
+.container__aside > ul > li:hover .icon,
+.container__aside > ul > li:hover p {
+    color: #ffffff;
+}
+
+.container__aside__top > p:nth-child(3) {
+    color: #2f94df;
+}
+
+.container__aside__top > p {
+    font-size: 12px;
+}
+
+.container__aside__top > button:hover {
+    color: #2f94df;
+}
+
+.container__aside__top > button {
+    padding: 8px;
+    border: 1px solid #ffffff;
+    font-size: 12px;
+    border-radius: 15px;
+    transition: background-color .3s, color .3s;
+}
+
+.container__aside > ul {
+    margin-top: 35px;
+}
+
+.container__aside > ul > li {
+    padding: 25px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    transition: background-color .3s, border-left-color .3s;
+}
+
+.container__aside > ul > li:hover {
+    background-color: #1d4c9e;
+    border-left-color: #2f94df;
+}
+
+.container__aside > ul > li:hover .icon,
+.container__aside > ul > li:hover p {
+    transition: color .3s;
+}
+
+.container__aside > ul > li > .icon,
+.container__aside > ul > li > p {
+    text-align: center;
+    color: rgba(255, 255, 255, .5);
+}
+
+.container__aside > ul > li > .icon {
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+.container__aside > ul > li > p {
+    text-transform: uppercase;
+}
+
+.container__right {
+    width: 1300px;
+    min-height: 100vh;
+}
+
+.nav__icon,
+.centre__text,
+.centre__top__title > p:nth-child(2),
+.centre__top__status,
+.centre__option__bar > p,
+.middle__right__top > p,
+.middle__left__text > p,
+.left__text__block > p,
+.jobs__company__details > p:nth-child(2) {
+    color: #808080;
+}
+
+.nav__icon {
+    margin: 0 10px;
+    opacity: 0.75;
+}
+
+.container__nav {
+    padding: 35px 40px;
+}
+
+.nav__text__centre,
+.middle__right__top {
+    justify-content: center;
+}
+
+.centre__text,
+.container__aside__top > button,
+.container__aside > ul > li,
+.nav__icon,
+.centre__top__icon,
+.centre__option__bar > p,
+.middle__right__top,
+.right__bottom__Jobs,
+.container__aside__top > img {
+    cursor: pointer;
+}
+
+.centre__text {
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+.centre__text:hover {
+    color: #1d4c9e;
+    transition: color .3s;
+}
+
+.container__right__centre {
+    background-color: #eeeeee;
+}
+
+.right__centre__top {
+    padding: 20px 35px;
+}
+
+.top__right__icons {
+    justify-content: flex-end;
+}
+
+.centre__top__title {
+    width: 200px;
+}
+
+.centre__top__title > p:nth-child(2) {
+    margin-top: 5px;
+}
+
+.centre__top__status,
+.centre__top__icon {
+    margin: 0 10px;
+}
+
+.centre__top__status,
+.centre__top__icon,
+.middle__left,
+.middle__right__top,
+.middle__right__bottom {
+    background-color: #ffffff;
+}
+
+.centre__top__status {
+    padding: 5px 20px;
+    border-radius: 25px;
+}
+
+.centre__top__icon {
+    padding: 5px 7px;
+    color: #2f94df;
+}
+
+.centre__top__icon:hover,
+.nav__icon:hover {
+    color: #1d4c9e;
+    transition: color .3s;
+    animation: tada;
+    animation-duration: 2s;
+}
+
+.centre__option__bar > p {
+    margin-right: 45px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.centre__option__bar > p:hover {
+    color: #2a58ac;
+    transition: color .3s;
+}
+
+.centre__option__bar,
+.middle__left__text,
+.right__bottom__Jobs {
+    border-bottom: #808080 solid 1px;
+}
+
+.centre__option__bar {
+    margin: 0 35px;
+    padding: 15px 0;
+}
+
+.centre__middle {
+    padding: 35px;
+}
+
+.middle__left {
+    padding: 25px;
+    width: 70%;
+}
+
+.middle__left > p {
+    margin-bottom: 20px;
+    font-weight: bold;
+    opacity: .90;
+}
+
+
+.middle__left__text > p:nth-child(2),
+.left__text__block {
+    margin-left: 150px;
+    width: 450px;
+    overflow-wrap: break-word;
+}
+
+.middle__left__text > p:nth-child(1) {
+    width: 150px;
+    overflow-wrap: break-word;
+}
+
+.middle__left__text > p,
+.left__text__block {
+    padding: 20px 0;
+}
+
+.middle__left__text--border,
+.right__bottom__Jobs--border {
+    border-bottom: none;
+}
+
+.middle__right__top {
+    height: 80px;
+    margin-left: 25px;
+    width: 350px;
+    padding: 25px 65px 25px 15px;
+}
+
+.middle__right__top > img {
+    height: 50px;
+    width: 50px;
+    margin-right: 25px;
+}
+
+.middle__right__bottom {
+    margin: 25px 0 0 25px;
+    width: 350px;
+    padding: 25px;
+    height: 650px;
+}
+
+.jobs__company__details > p:nth-child(1) {
+    color: #2a58ac;
+}
+
+.jobs__company__details > p:nth-child(3) {
+    color: #a9a9a9;
+}
+
+.middle__right__bottom > p {
+    margin: 10px 15px 20px 15px;
+}
+
+.right__bottom__Jobs {
+    margin: 0 15px;
+    padding: 15px 0;
+}
+
+.right__bottom__Jobs > img {
+    height: 60px;
+    width:60px;
+    margin-right: 10px;
+}
+
+.container__aside__top > img:hover {
+    opacity: 0.5;
+    transition: opacity .3s;
+}
+
+.right__bottom__Jobs:hover {
+    opacity: 0.75;
+    transition: opacity .3s;
+    animation: pulse;
+    animation-duration: 2s;
+}
+
+
